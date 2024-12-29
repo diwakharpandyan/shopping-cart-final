@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping-Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="layout-container">
+        <div class="title"><h1>Desserts</h1></div>
+        <div id="products" class="products"></div>
+      </div>
+      <div class="cart-container">
+        <div class="cart-header">
+          <h2>Your Cart (<span id="total-items-qty"></span>)</h2>
+        </div>
+        <div id="cart" class="cart"></div>
+        <div id="cart-footer" class="cart-footer">
+          <div class="order-total">
+            <div class="order-total-text">Order Total</div>
+            <div id="order-total-price" class="order-total-price"></div>
+          </div>
+          <div class="carbon-neutral-block">
+            <img src="./assets/images/icon-carbon-neutral.svg" alt="" />
+            <p class="carbon-neutral-text">
+              This is a <span>carbon-neutral </span>delivery
+            </p>
+          </div>
+          <button id="confirm-order-button" class="confirm-order-button">
+            Confirm Order
+          </button>
+        </div>
+      </div>
+      <div
+        id="order-confirmation-container"
+        class="order-confirmation-container"
+      >
+        <div class="order-confirmation">
+          <div class="order-confirmation-header">
+            <img src="./assets/images/icon-order-confirmed.svg" alt="" />
+            <h1>Order Confirmed</h1>
+            <small>We hope you enjoy your food!</small>
+          </div>
+          <div
+            id="order-confirmation-main"
+            class="order-confirmation-main"
+          ></div>
+          <div class="order-confirmation-footer">
+            <div class="order-confirmation-total">
+              <div class="order-confirmation-total-text">Order Total</div>
+              <div
+                id="order-confirmation-total-price"
+                class="order-confirmation-total-price"
+              ></div>
+            </div>
+            <button
+              id="order-confirmation-start-new-button"
+              class="order-confirmation-start-new-button"
+            >
+              Start New Order
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./src/Data.js"></script>
+    <script src="./src/script.js"></script>
+    <script src="./src/cart.js"></script>
+    <script src="./src/order.js"></script>
+  </body>
+</html>
+
+<!-- <div class="image-container"><img id=image-${id} width="100%" src=${image.desktop} alt=""></div> -->
